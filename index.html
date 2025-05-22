@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>История отношений</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fff4ef;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .img-box {
+      position: relative;
+      width: 300px;
+      cursor: pointer;
+    }
+    .img-box img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .img-box:hover img {
+      transform: scale(1.02);
+    }
+    .caption {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Нажми на картинку, чтобы увидеть фразу</h1>
+  <div class="container">
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0928_Спорящая пара_remix_01jvv3x2v7ev5vqqr9zz6gcvm7.png" alt="Image" />
+      <div class="caption">Фраза для изображения 1</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0921_Свадебная Церемония Иллюстрация_remix_01jvv3haaxfaa8dcgbpqemc5gt.png" alt="Image" />
+      <div class="caption">Фраза для изображения 2</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0918_Печальная Фотография_remix_01jvv3bgxxf6htm60f7ecyqckf.png" alt="Image" />
+      <div class="caption">Фраза для изображения 3</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0915_Пара в кафе_remix_01jvv35gs0ek8a0v4bq5s0b8sk.png" alt="Image" />
+      <div class="caption">Фраза для изображения 4</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0904_Прощание с чемоданом_remix_01jvv2h88yeh3awg7f06ty06xt.png" alt="Image" />
+      <div class="caption">Фраза для изображения 5</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0859_Влюблённые взгляды_remix_01jvv28y6rfp59h750qmrxz391.png" alt="Image" />
+      <div class="caption">Фраза для изображения 6</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0855_Встреча у двери_remix_01jvv21pd1fmgbdvtxcrsgvb7y.png" alt="Image" />
+      <div class="caption">Фраза для изображения 7</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0837_Объятие под дождём_remix_01jvv0zdvpednssnexwbw0zkj6.png" alt="Image" />
+      <div class="caption">Фраза для изображения 8</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0831_Ночная встреча влюблённых_remix_01jvv0m4yhff3829qnr98r1tpp.png" alt="Image" />
+      <div class="caption">Фраза для изображения 9</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0932_Грустная пара на диване_remix_01jvv457wkfvctcq7d3qpd7p34.png" alt="Image" />
+      <div class="caption">Фраза для изображения 10</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0837_Объятие под дождём_remix_01jvv0zdvpednssnexwbw0zkj6 (1).png" alt="Image" />
+      <div class="caption">Фраза для изображения 11</div>
+    </div>
+
+    <div class="img-box" onclick="toggleCaption(this)">
+      <img src="images/20250522_0851_Романтика у костра_remix_01jvv1s13hf8w8be8sr1w0mzfm.png" alt="Image" />
+      <div class="caption">Фраза для изображения 12</div>
+    </div>
+  </div>
+  <script>
+    function toggleCaption(box) {
+      const caption = box.querySelector('.caption');
+      caption.style.display = caption.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
